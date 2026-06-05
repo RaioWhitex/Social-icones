@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e0e5ec;
+}
+
+/* ── ROW ── */
+
+.icons-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* ── BOTÃO BASE ── */
+
+.icon-btn {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: #e0e5ec;
+  font-size: 22px;
+
+  /* Sombra neumorphism: clara em cima-esquerda, escura em baixo-direita */
+  box-shadow:
+     6px  6px 12px #b8bec7,
+    -6px -6px 12px #ffffff;
+
+  transition: box-shadow 0.2s ease, transform 0.15s ease;
+}
+
+/* Efeito "pressionado" ao hover */
+.icon-btn:hover {
+  box-shadow:
+     2px  2px  6px #b8bec7,
+    -2px -2px  6px #ffffff,
+    inset  3px  3px  6px #b8bec7,
+    inset -3px -3px  6px #ffffff;
+  transform: scale(0.96);
+}
+
+/* ── CORES DOS ÍCONES ── */
+
+.facebook  i { color: #1877f2; }
+.twitter   i { color: #1da1f2; }
+.instagram i { color: #e1306c; }
+.github    i { color: #1a1a2e; }
+.youtube   i { color: #ff0000; }
